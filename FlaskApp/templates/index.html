@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PUBG Finish Prediction</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<H2>Welcome to PUBG final finish placement</H2>
+
+<h3>Our Jupyter Notebooks</h3>
+<ul>
+    <li ><a href="{{ url_for('anamoly') }}">Anamoly Detection</a></li>
+    <li ><a href="{{ url_for('details') }}">EDA and Feature Selection</a></li>
+    <li ><a href="{{ url_for('notebook_prediction') }}">Prediction on various ML Algos</a></li>
+
+</ul>
+<h2>ML Models Accuracy</h2>
+
+<table>
+  <tr>
+    <th>Model</th>
+    <th>mae_test</th>
+    <th>mae_train</th>
+    <th>r2_test</th>
+    <th>r2_train</th>
+    <th>rms_test</th>
+    <th>rms_train</th>
+
+  </tr>
+  <tr>
+    <td>Linear Regression</td>
+    <td>0.123350</td>
+    <td>0.123435</td>
+    <td>0.721562</td>
+    <td>0.720961</td>
+    <td>0.162195</td>
+    <td>0.162373</td>
+
+  </tr>
+  <tr>
+    <td>RandomForest</td>
+    <td>0.080432</td>
+    <td>0.080362</td>
+    <td>0.865387</td>
+    <td>0.865475</td>
+    <td>0.112776</td>
+    <td>0.112741</td>
+
+  </tr>
+  <tr>
+    <td>Neural Network</td>
+    <td>0.080515</td>
+    <td>0.080524</td>
+    <td>0.872683</td>
+    <td>0.872523</td>
+    <td>0.109677</td>
+    <td>0.109748</td>
+
+  </tr>
+</table>
+<h2>Best model is- Random Forest</h2>
+<h3>Please click below to get your prediction</h3>
+<ul>
+    <li ><a href="{{ url_for('prediction') }}">New Prediction</a></li>
+
+</ul>
+
+</body>
+</html>

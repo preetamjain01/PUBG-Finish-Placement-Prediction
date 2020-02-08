@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style.css') }}">
+
+    <title>Prediction of PUBG finish</title>
+</head>
+<body>
+<h1> Hey there, {{ name }}</h1>
+
+<h3>Please enter details for getting the prediction of your final rank</h3>
+
+
+      <form action = "result" method = "POST">
+          <p>Choose Model</p>  <input list="models" name="models">
+  <datalist id="models">
+    <option value="Linear Regression">
+    <option value="Random Forest">
+    <option value="Neural Network">
+  </datalist>
+         <p>Total Distance <input type = "text" name = "Total Distance" /></p>
+         <p>Weapons Acquired <input type = "text" name = "Weapons Acquired" /></p>
+         <p>Heals & Boosts <input type = "text" name = "Heals & Boosts" /></p>
+         <p>Longest Kills <input type ="text" name = "Longest Kills" /></p>
+          <p>Killing Score <input type = "text" name = "Killing Score " /></p>
+         <p>Assist <input type = "text" name = "Assist" /></p>
+         <p>Knockouts <input type = "text" name = "Knockouts" /></p>
+         <p>Headshot Kills <input type ="text" name = "Headshot Kills" /></p>
+            <p>Revives <input type = "text" name = "Revives" /></p>
+         <p>Vehicles Destroyed <input type = "text" name = "Vehicles Destroyed" /></p>
+         <p>Kill Place <input type = "text" name = "Kill Place" /></p>
+         <p>No of Groups <input type ="text" name = "No of Groups" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+
+
+
+
+</body>
+</html>

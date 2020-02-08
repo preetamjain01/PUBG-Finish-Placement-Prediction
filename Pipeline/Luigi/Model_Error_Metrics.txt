@@ -1,0 +1,18 @@
+RandomForestRegressor.sav
+ Error Metrics:
+                       Model  mae_test    ...      rms_test  rms_train
+0  RandomForestRegressor.sav  0.076535    ...      0.107389   0.107053
+
+[1 rows x 7 columns]
+LinearRegression.sav
+ Error Metrics:
+                  Model  mae_test    ...      rms_test  rms_train
+0  LinearRegression.sav  0.123526    ...      0.162506   0.162431
+
+[1 rows x 7 columns]
+MLPRegressor.sav
+ Error Metrics:
+              Model  mae_test    ...      rms_test  rms_train
+0  MLPRegressor.sav    0.0713    ...      0.098328   0.098162
+
+[1 rows x 7 columns]
