@@ -1,4 +1,4 @@
-# ADS-Final-Project-Prediction_On_PUBG_Dataset
+# Prediction_On_PUBG_Dataset
 
 ## For running Flask on docker--
 
